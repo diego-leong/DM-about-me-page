@@ -1,3 +1,11 @@
-a {
-    background-color: blue;
+body {
+    background-color: #819476;
+}
+
+.container {
+    color:white;
+}
+
+#about-text {
+    font-size: 1.5em;
 }
