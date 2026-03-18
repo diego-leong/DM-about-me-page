@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>A Practice Website</title>
+    <!-- Title and icon -->
+    <title>Diego Leong</title>
+<link rel="icon" type="image/png" href="/resources/images/dleongapps_pfp.png">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Local CSS -->
@@ -20,6 +24,9 @@
     <meta property="og:image" content="resources/boa_splash_pure_white.png" />
     <meta property="og:description" content="An about page for a very stand-up guy" />
     <!-- end of OG Open Graph tags -->
+    
+    <!-- Google Fonts -->
+    
 
 </head>
   <body>
@@ -115,28 +122,35 @@
         <div class="row">            
             <!-- column class per card -->
                 <!-- Card -->
-                <div class="col">
+                <div class="col-md-4">
                     <div class="card"> <!--Removed width styling for example. It appears to be dynamic and adjust -->
                     <div class="card-body">
                         <h5 class="card-title">Coding Skills</h5>
                         <p class="card-text">I can help with building your next project.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card"> <!--Removed width styling for example. It appears to be dynamic and adjust -->
-                    <div class="card-body">
-                        <h5 class="card-title">Visual Skills</h5>
-                        <p class="card-text">I can help with your visual identity.</p>
+                        <span class="badge bg-success rounded-pill">Bootstrap</span>
+
 
                     </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4">
+                    <div class="card"> <!--Removed width styling for example. It appears to be dynamic and adjust -->
+                    <div class="card-body">
+                        <h5 class="card-title">Visual Skills</h5>
+                        <p class="card-text">I can help with your visual identity.</p>
+                        <span class="badge bg-success rounded-pill">Adobe Photoshop</span>
+                        <span class="badge bg-success rounded-pill">Adobe Lightroom</span>
+                        <span class="badge bg-success rounded-pill">Wireframing</span>
+
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
                     <div class="card"> <!--Removed width styling for example. It appears to be dynamic and adjust -->
                     <div class="card-body">
                         <h5 class="card-title">Video Skills</h5>
                         <p class="card-text">Showcasing your work through motion is just as important.</p>
+
                         <span class="badge bg-success rounded-pill">Adobe Premiere Pro</span>
                         <span class="badge bg-success rounded-pill">Davinci Resolve</span>
                         <span class="badge bg-success rounded-pill">Camera Operation</span>
@@ -149,6 +163,25 @@
             </div>
         <!-- End of Cards -->
 
+        <!-- Projects -->
+        <h2 id="skills" class="fs-1 p-5 text-center">Projects</h2>
+        
+            <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+            </div>
         
 
         <!-- Contact Us 
