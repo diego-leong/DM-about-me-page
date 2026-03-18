@@ -20,13 +20,13 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Destinations</a>
+            <a class="nav-link" href="#destinations">Destinations</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
             </li>
         </ul>
         </div>
@@ -45,7 +45,7 @@
         <div class="carousel-item active">
         <img src="/practice-files/practice-resources/flower-field.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
+            <h5>Literally a carousel slide 1</h5>
             <p>Some representative placeholder content for the first slide.</p>
         </div>
         </div>
@@ -152,14 +152,41 @@
             - Only wants 2 taking up the width of the browser
             - col-6 class will determine how much is being taken up
             -->
-        <h2 id="destinations" class="fs-1 p-5 mt-5 mb-5">ABOUT</h2> 
+        <h2 id="about" class="fs-1 p-5 mt-5 mb-5 text-center">ABOUT</h2> 
         <!-- Again, using fs-1 to set consistent heading size while keeping semantics
          This heading does is NOT centered.
         -->
         <div class="row">
-            <div class="col-6">
-                <div class="bg-secondary text-white p-5 mt-5 mb-5"> <!--  -->
+            <div class="col-md-6">
+                <!-- 
+                I noticed that this does not break into smaller cards in a mobile viewport - the cards become very skinny at a thin viewport width. As this div uses col-6, I imagine that's a reason why they're being squashed. Need to explore the col class.
+
+                Also, the div will shrink due to the length of the content and does not have a constant size.
+                How would you keep a consistent size and allow for buffer space?
+                -->
+                <div class="bg-dark-subtle text-white p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
                     <h2>Rates</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, qui distinctio mollitia modi ad, suscipit cum nam at officiis maxime excepturi necessitatibus, aspernatur porro expedita. Voluptates, perferendis harum incidunt temporibus fuga magni fugiat natus ea unde soluta in nesciunt tenetur sint sit aperiam quod voluptate, eum nam ut provident esse.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Fees</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, qui distinctio mollitia modi ad, suscipit cum nam at officiis maxime excepturi necessitatibus, aspernatur porro expedita. Voluptates, perferendis harum incidunt temporibus fuga magni fugiat natus ea unde soluta in nesciunt tenetur sint sit aperiam quod voluptate, eum nam ut provident esse.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="bg-dark-subtle text-dark p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Features</h2>
+                    <p>How in the world is this classified as "Dark-subtle" wtf
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5"> <!-- giving the about us cards some color and space around them -->
+                    <h2>Yuh</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, qui distinctio mollitia modi ad, suscipit cum nam at officiis maxime excepturi necessitatibus, aspernatur porro expedita. Voluptates, perferendis harum incidunt temporibus fuga magni fugiat natus ea unde soluta in nesciunt tenetur sint sit aperiam quod voluptate, eum nam ut provident esse.
                     </p>
                 </div>
@@ -168,13 +195,31 @@
         <!-- Contact Us 
          - Same heading style as the About section
         -->
-        <h2 id="destinations" class="fs-1 p-5 mt-5 mb-5">Contact Us</h2>
+        <h2 id="contact" class="fs-1 p-5 mt-5 mb-5 text-center">Contact Us</h2>
+        
+        <div class="w-100 bg-dark-subtle p-5 mb-5"> <!-- Reuses paragraph from the beginning in order to establish same look and feel -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat neque temporibus, quod incidunt quos ipsam blanditiis assumenda earum nam soluta iste, dicta delectus odit esse, consectetur eligendi? Ex rerum quia quaerat, iste reiciendis perspiciatis nam dolore nemo tempora voluptas nostrum omnis corrupti perferendis sint nulla ab commodi animi facilis soluta. Sit illum quas molestiae aliquid sunt totam, repellendus facere asperiores veniam qui quasi quod unde omnis numquam! Natus, ipsa similique consectetur corporis atque omnis blanditiis. Natus odio excepturi officiis tenetur fuga deleniti exercitationem, omnis delectus itaque? Molestiae perspiciatis fuga itaque magni tempora libero! Saepe ea eveniet iure eos voluptates.
+            </p>
+            <div class="text-center">
+            <button type="button" class="btn btn-primary btn-lg"><a href="mailto:abc@def.com" class="text-white text-decoration-none">hmu me bro</a></button> <!-- added link inside button text and removed link styling -->
+            </div>
+        </div>
+        <!-- Image Before footer for fancy -->
+        <h2 class="fs-1 p-5 mt-5 mb-5 text-center">It would be awkward to jump to the footer without this image</h2>        
+        <img src="/practice-files/practice-resources/orange-forest.jpg" class="w-100"> <!-- Without BS' width class, this would only scale to its actual size and get cut off (or if too small, not fill). This makes it responsive, but it will be stuck to be as wide as its container. -->
 
-
-        <!-- Footer -->
 
     </div> <!-- End of Container -->
 
+    <!-- Experimental image outside of container -->
+    <img src="/practice-files/practice-resources/orange-forest.jpg" class="w-100"> <!-- Here I placed it outside of the container, and thus it no longer has the default margin -->
+    
+    <!-- Footer -->
+    <footer class="bg-dark-subtle mt-5 p-5 text-center">
+        <p>&copy; Footer? I hardly know her!</p>
+        <p><a href="mailto:abc@def.com">bro hmu alr</a></p>
+    </footer>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
