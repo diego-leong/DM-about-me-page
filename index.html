@@ -26,14 +26,17 @@
     <!-- end of OG Open Graph tags -->
     
     <!-- Google Fonts -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Lato -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary text-decoration-none">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#topofpage">
         <img src="/resources/images/dleongapps_pfp.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top rounded-circle">
         Diego Leong
         </a> <!-- Click name to top -->
@@ -44,7 +47,7 @@
             <ul class="navbar-nav">
                 <!-- Navigate and scroll to sections -->
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#topofpage">Home</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#about">About Me</a>
@@ -55,52 +58,59 @@
                 <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
                 </li>            
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                </li> -->
             </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Splash image -->
-    <div class="container mt-5">
-        <div class="row">
+    <!-- HERO moved to oldhero.html-->
 
-            <!-- Welcome message and Buttons -->
-            <div class="col-12 col-md-4">
-                <div> <!-- Not sure about center alignment. class="d-flex align-items-center" does not work, as both get squashed.-->
-                    <h1>Hej Hej! I'm Diego.</h1>
-                    <p>I enjoy computadoras (and I don't know Spanish despite my name)</p>
-                </div>
-            </div>
-
-            <!-- Splash image -->
-            <div class="col col-md-4">
-                    <img src="/resources/images/devMission_Breakbuild_portrait_square_clean.png" class="w-100 rounded" alt="A nice young man wearing a green shirt in front of brown background."> <!-- Here I placed it outside of the container, and thus it no longer has the default margin -->
-            
-            </div>
-        </div>
+    <!-- Test -->
+    <div id="topofpage" class="container col-xxl-8 px-4 py-5"> 
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+            <div class="col"> <!-- originally col-10 col-sm-8 col-lg-6 -->
+                <img src="resources/images/devMission_Breakbuild_portrait_square_clean.png" class="d-block mx-lg-auto img-fluid" alt="A nice young man wearing a green shirt in front of brown background."> 
+            </div> 
+            <div class="col-lg-6"> 
+                <h1 class="fs-1 fw-bold">Hej! I'm Diego!</h1> 
+                <p class="lead">
+                    
+                </p> 
+                <!-- Buttons -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                        <a class="text-white text-decoration-none" href="https://www.linkedin.com/in/diegoleong/" target="_blank">LinkedIn</a>
+                    </button> 
+                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2">
+                        <a class="text-white text-decoration-none" href="https://github.com/diego-leong/" target="_blank">Github</a>
+                    </button> 
+                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2">
+                        <a class="text-white text-decoration-none" href="mailto:diegoleongapps@gmail.com" target="_blank">Email</a>
+                    </button> 
+                </div> 
+            </div> 
+        </div> 
     </div>
+    
 
     <!-- Main Container -->
     <div class="container">
         
         <!-- About section -->
         <!-- About Title -->
-        <h2 id="about" class="fs-1 p-5 text-center">My Story</h2> 
+        <h2 id="about" class="fs-1 pb-5 text-center">My Story</h2> 
         <!-- About Paragraph -->
         <div class="row">
-            <div class="col">
+            <div class="col mx-5">
 
-                <p id="about-text" class="ms-5 me-5">
-                    After graduating from SFSU with a focus on video production and documentary, I've recently started attending DevMission with an interest in moving into the IT space.
+                <p id="about-text" class="ms-3 me-3">
+                    After coming back from school abroad and earning my degree in Video Production, I realized my passion for the technical aspects of video production and my other hobbies such as bikes could be translated to my interest in computers. I've now started Dev/Mission Registered Pre-Apprenticeship Program with an interest in moving into the IT space. 
                     <br>
                     <br>
-                    I think with video journalism and docs really passionate about learning about everything I can get my hands on - be it about hardware such as PCs, Bikes, 3D printing, Cameras - or learning about making things more efficient through software. I'm also very passionate about sharing this info with others too and making it accessible and less scary. 
-                    <br>
-                    <br>
-                    I'm looking for an IT role where I can learn on the job as much as possible, and bump shoulders with more people as curious as me.
+                    I'm now looking for a full time opportunity to get hands on experience in the IT field where my experience with customer service, PC technical skills, and creative media skills can help others reach their highest potential!
                 </p>
             </div>
         </div>
@@ -197,7 +207,7 @@
         <!-- Projects -->
         <h2 id="projects" class="fs-1 p-5 text-center">Projects</h2>
 
-        <div class="row">
+        <div class="row mb-5">
             <!-- Project Card: Lyric Page -->
             <div class="col-lg-4 col-md-6 mt-3">
                 <div class="card">
@@ -205,7 +215,7 @@
                 <div class="card-body ">
                     <h5 class="card-title">Lyrics Page: Duvet by Bôa</h5>
                     <p class="card-text">
-                        Description of the project
+                        A page dedicated to the iconic song "Duvet" used in the Anime Lain: Serial Experiments.
                     </p>
                 </div>
                 <div class="card-body">
@@ -233,7 +243,7 @@
                 <div class="card">
                 <img src="resources/images/offline.jpg" class="card-img-top" alt="...">
                 <div class="card-body ">
-                    <h5 class="card-title">IOT Final Project</h5>
+                    <h5 class="card-title">IoT Final Project</h5>
                     <p class="card-text">
                         Project under construction
                     </p>
@@ -255,13 +265,17 @@
         <!-- Contact 
          - Same heading style as the About section
         -->
+
+        <!-- 
         <h2 id="contact" class="fs-1 p-5 mt-5 mb-5 text-center">Contact</h2>
         
-        <div class="w-100 bg-dark-subtle p-5 mb-5"> <!-- Reuses paragraph from the beginning in order to establish same look and feel -->
+      
+        <div class="w-100 bg-dark-subtle p-5 mb-5"> 
             <div class="text-center">
-            <button type="button" class="btn btn-primary btn-lg"><a href="mailto:abc@def.com" class="text-white text-decoration-none">hmu me bro</a></button> <!-- added link inside button text and removed link styling -->
+            <button type="button" class="btn btn-primary btn-lg"><a href="mailto:abc@def.com" class="text-white text-decoration-none">hmu me bro</a></button> 
             </div>
-        </div>
+        </div> 
+        -->
 
 
     </div> <!-- End of Container -->
@@ -270,30 +284,20 @@
     <img src="/resources/images/leong_diego_blur.jpg" class="w-100"> <!-- Here I placed it outside of the container, and thus it no longer has the default margin -->
     
     <!-- Footer -->
-    <footer class="bg-dark-subtle p-5 text-center">
-        <p>&copy; Diego Leong 2026</p>
-        <p><a href="mailto:abc@def.com">You know where to find me.</a></p>
+    <footer class="bg-dark-subtle p-5 ">
+        <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><p>&copy; Diego Leong 2026</p></li>
+            <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/diegoleong/" target="_blank">LinkedIn</a></li>
+            <li class="breadcrumb-item"><a href="https://github.com/diego-leong/" target="_blank">Github</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="mailto:diegoleongapps@gmail.com" target="_blank">Email</a></li>
+        </ol>
+        </nav>
+        
+        <!-- <p><a href="mailto:abc@def.com">You know where to find me.</a></p> -->
     </footer>
-<!-- Testing -->
-<div class="container col-xxl-8 px-4 py-5"> 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
-        <div class="col-10 col-sm-8 col-lg-6"> 
-            <img src="resources/images/devMission_Breakbuild_portrait_square_clean.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
-        </div> 
-        <div class="col-lg-6"> 
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1> 
-            <p class="lead">
-                Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+    
 
-            </p> 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> 
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> 
-            </div> 
-        </div> 
-    </div> 
-</div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
